@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# React: Quote Generator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./ReadMeImages/changePageLayout1.png">
 
-## Available Scripts
 
-In the project directory, you can run:
+# Goal's & Task's:
+## 👉  React : front-end
 
-### `npm start`
+- Understand and use Components
+- Understand and use props
+- Understand and use state/useState
+- Understand and use onChange & onClick
+- Understand and use Async & Fetch 
+<br>  
+ Create a Quote Generator with api below
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## 👉  Node & Express : Back-end
+- Understand and setup Routes/express/postman
+- Understand and use postgreSQL
+- Understand and use heroku database/hosting
+<br>  
+ Create a quotes database with express and routes
+---
+## 👉FrontEnd & Backend 
 
-### `npm test`
+- Putting them both together to make a full stack app
+---
+<br>  
+<br>  
+<br>  
+<br>  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1 align="center">Front-End-React</h1>
 
-### `npm run build`
+ <h4 align="center">Component-Layout-Tree</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+  -src
+   -components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    -App
+      - App.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    -Header
+      - Header.js
 
-### `npm run eject`
+    -Main
+      - Main.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    -QuoteHeading
+      - QuoteHeading.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    -Button
+      - Button.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Make sure to do regular git commits to see how you are getting on. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👉 1a. Layout Each folder and file for you components as above.
+ 
+<br>
+ 
+👉 1b. Make sure to add a "ClassName" to each jsx element so you can Style each one in app.css
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3 align="center"> ( Time to code ) </h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+👉 Create a handleClick function inside your app.js that console logs the word '**hello World**' , then pass down that function handleClick as a prop to the Button.js component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👉 inside Button.js add an onClick event  that calls  the function HandleClick that was passed down as a prop.
+###### (  do npm run start & click the button to see if it logs in the console )
 
-### Analyzing the Bundle Size
+<br>
+👉Change the handleClick function in app.js to be an async function handleClick, then write out a fetch request that gets a qoute from this api.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
 
-### Making a Progressive Web App
+``` https://api.kanye.rest ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+  
+  If you need help making a fetch request use this link to show you how 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  https://dmitripavlutin.com/javascript-fetch-async-await/
 
-### Deployment
+Make sure to console log your data from your api to make sure you are getting back data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👉Above your Async Function create a useState that is instially set to an empty object.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👉pass the useState to your main.js component as a prop and render it in the JSX/HTML
+
+Once you click the button you should get a new Qoute each time on the page.
+
+💥BONUS TASK:
+  Try to re-create it again without looking at this guide.
+
+
+
+
+
+
+
+
+
+
+
